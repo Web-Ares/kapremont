@@ -37,6 +37,18 @@ var Slider = function (obj) {
         });
     }
 
+    if (_obj.hasClass('useful-links__wrap')) {
+        var _slider1 = new Swiper(_obj, {
+            nextButton: '.useful-links__next',
+            prevButton: '.useful-links__prev',
+            slidesPerView: 1,
+            loop: true,
+            paginationClickable: true
+
+        });
+
+    }
+
     //public properties
 
     //public methods
