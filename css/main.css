@@ -532,7 +532,7 @@ a{
 .header__menu>ul li ul{
     position: absolute;
     background: #33ca53 url("../img/menu-top.png")no-repeat;
-    background-size: 247px 8px;
+    background-size: 273px 8px;
     background-position: -1px 0;
     top: 51px;
     padding-top: 11px;
@@ -558,7 +558,7 @@ a{
 .header__menu > ul > li:hover ul{
     opacity: 1;
     visibility: visible;
-    width: 242px;
+    width: 268px;
     border-radius: 4px;
 }
 .header__menu>ul li ul li a{
