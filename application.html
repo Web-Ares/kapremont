@@ -121,7 +121,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label for="form-frame__patronymic">Ваше Отчество<span class="form-frame__patronymic">*</span></label>
+                            <label for="form-frame__patronymic">Ваше Отчество<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__surname" id="form-frame__patronymic" required/>
@@ -140,7 +140,7 @@
                             <label for="form-frame__email">Адрес электронной почты<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
-                            <input type="text" name="form-frame__email" id="form-frame__email" required/>
+                            <input type="email" name="form-frame__email" id="form-frame__email" required/>
                         </dd>
                     </dl>
                     <dl>
@@ -194,7 +194,7 @@
                     <!-- form-frame__place -->
                     <dl class="form-frame__place">
                         <dt>
-                            <label for="form-frame__housing">Корпус<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__housing">Корпус</label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__housing" id="form-frame__housing" required/>
@@ -218,7 +218,7 @@
                             <label for="form-frame__phone">Ваш контактный телефон</label>
                         </dt>
                         <dd>
-                            <input type="text" name="form-frame__phone" id="form-frame__phone" required placeholder="+7"/>
+                            <input type="tel" name="form-frame__phone" id="form-frame__phone" required placeholder="+7"/>
                         </dd>
                     </dl>
 
@@ -673,6 +673,7 @@
 
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
 <script src="js/jquery.main.js"></script>
 
 </body>
