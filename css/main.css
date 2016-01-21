@@ -271,7 +271,7 @@ a{
     width: 640px;
     text-align: left;
     background: #f5f4ec;
-    padding: 19px 22px 10px 24px;
+    padding: 19px 5px 10px 24px;
     margin-bottom: 60px;
 
 }
@@ -1266,4 +1266,19 @@ a.information-implementation:after{
     width: 180px;
     height: 40px;
 }
-/* --------------- /capcha --------------- */
+/* --------------- /capcha --------------- *//* --------------- form-frame --------------- */
+
+/* --------------- site__content-video --------------- */
+.site__content-wrap .site__content-video li{
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    padding-left: 0;
+}
+.site__content-wrap .site__content-video li:before{
+    display: none;
+}
+.site__content-wrap .site__content-video li:nth-child(odd){
+    margin-right: 16px;
+}
+/* --------------- site__content-video --------------- */
