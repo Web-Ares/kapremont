@@ -16,6 +16,7 @@
 </head>
 <body>
 
+<!-- site -->
 <div class="site">
 
     <!-- site__header -->
@@ -78,176 +79,48 @@
     </header>
     <!-- /site__header -->
 
-
     <!-- /site__content -->
     <div class="site__content">
 
         <!-- breadcrumps -->
         <div class="breadcrumps">
             <a href="#">Главная</a>
-            <a href="#">Электронная приёмная</a>
-            <span>Написать обращение</span>
+            <a href="#">Медиа</a>
+            <span>Видео</span>
         </div>
         <!-- /breadcrumps -->
 
         <!-- site__content-wrap -->
         <div class="site__content-wrap">
-            <h1 class="">Написать обращение</h1>
-            К рассмотрению принимаются обращения с правильно заполненными обязательными полями, отмеченные символом *
+            <h1 class="">Видео</h1>
 
-            <p>Срок рассмотрения обращения - 30 дней.</p>
+            <ul class="site__content-video">
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Программа "Прямая линия" телеканала "Вся Уфа". Гость передачи - генеральный директор фонда "Региональный оператор Республики Башкортостан" Борис Герасимов</p>
+                </li>
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Региональные системы капитального ремонта</p>
+                </li>
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Региональные системы капитального ремонта многоквартирных домов</p>
+                </li>
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Капитальный ремонт (выпуск 7)</p>
+                </li>
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Капитальный ремонт (выпуск 6)</p>
+                </li>
+                <li>
+                    <iframe width="290" height="188" src="https://www.youtube.com/embed/UTJaPegi3CY" frameborder="0" allowfullscreen></iframe>
+                    <p>Капитальный ремонт (выпуск 5)</p>
+                </li>
+            </ul>
 
-            <!-- form-frame -->
-            <div class="form-frame">
-
-                <form method="get" action="#">
-                    <dl>
-                        <dt>
-                            <label form="form-frame__surname">Ваша Фамилия<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__surname" id="form-frame__surname" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__name">Ваше Имя<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__name" id="form-frame__name" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__patronymic">Ваше Отчество<span class="form-frame__patronymic">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__surname" id="form-frame__patronymic" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__oganization">Наименование организации</label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__oganization" id="form-frame__oganization" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__email">Адрес электронной почты<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__email" id="form-frame__email" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__country">Городской округ / Муниципальный район<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__country" id="form-frame__country" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__city">Город / Населенный пункт<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__city" id="form-frame__city" required/>
-                        </dd>
-                    </dl>
-                    <dl class="form-frame__zip">
-                        <dt>
-                            <label form="form-frame__zip">Индекс</label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__zip" id="form-frame__zip" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__street">Улица<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__street" id="form-frame__street" required/>
-                        </dd>
-                    </dl>
-                    <dl class="form-frame__place">
-                        <dt>
-                            <label form="form-frame__home">Дом<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__home" id="form-frame__home" required/>
-                        </dd>
-                    </dl>
-                    <dl class="form-frame__place">
-                        <dt>
-                            <label form="form-frame__housing">Корпус<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__housing" id="form-frame__housing" required/>
-                        </dd>
-                    </dl>
-                    <dl class="form-frame__place">
-                        <dt>
-                            <label form="form-frame__flat">Квартира<span class="form-frame__required">*</span></label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__flat" id="form-frame__flat" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__phone">Ваш контактный телефон</label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__phone" id="form-frame__phone" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__file">Прикрепить файл
-                                <span class="form-frame__note">Общим объемом не более 16 Mb <br/>
-                                Тип файлов: jpg, gif, png, jpeg, pdf</span>
-                            </label>
-                        </dt>
-                        <dd>
-                            <input type="file" name="form-frame__file" id="form-frame__file" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__message">Текст сообщения или вопроса<span class="form-frame__required">*</span>
-                                <span class="form-frame__note">Не более 5000 символов</span>
-                            </label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__message" id="form-frame__message" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__uswer">Форма получения ответа<span class="form-frame__required">*</span>
-                            </label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__uswer" id="form-frame__uswer" required/>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>
-                            <label form="form-frame__captcha">Введите символы с картинки<span class="form-frame__required">*</span>
-                            </label>
-                        </dt>
-                        <dd>
-                            <input type="text" name="form-frame__captcha" id="form-frame__captcha" required/>
-                        </dd>
-                    </dl>
-                </form>
-
-            </div>
-            <!-- /form-frame -->
 
         </div>
         <!-- /site__content-wrap -->
