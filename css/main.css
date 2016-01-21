@@ -262,8 +262,9 @@ a{
     width: 640px;
     text-align: left;
     background: #f5f4ec;
-    padding: 19px 22px 10px 24px;
+    padding: 19px 29px 10px 24px;
     margin-bottom: 60px;
+
 }
 .site__aside{
     display: inline-block;
@@ -275,28 +276,34 @@ a{
     letter-spacing: -1px;
     line-height: 25px;
     margin-bottom: 9px;
+    font-weight: 400;
+    padding-right: 30px;
+    word-spacing: 5px;
 }
 .site__content-wrap p{
     font-size: 14px;
     word-spacing: -1px;
     line-height: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 .site__content-wrap h2{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     margin-bottom: 7px;
+    font-weight: 400;
 }
 .site__content-wrap h3{
     color: #2fa536;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 9px;
+    font-weight: 100;
 
 }
 .site__content-wrap h4{
     font-size: 14px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 .site__content-wrap-table{
     width: 575px;
@@ -309,16 +316,18 @@ a{
     color: #fff;
     font-size: 14px;
     text-align: center;
+    font-weight: 400;
 }
 .site__content-wrap-table tr td {
     text-align: center;
     vertical-align: middle;
     padding: 17px 0 17px;
-    color: #2b2b2b;
+    color: #114674;
     font-weight: 300;
     font-size: 14px;
     border: 1px solid #245098;
     background: #ffffff;
+    font-weight: 700;
 }
 .site__content-wrap a{
     color: #114674;
@@ -336,7 +345,125 @@ a{
 .site__content-wrap .site__content-wrap-span2{
     color: #2fa536;
 }
+.site__content-wrap ol{
+    list-style-type: decimal;
+}
+.site__content-wrap ul{
+    margin-bottom: 24px;
+}
+.site__content-wrap ul ul{
+    margin-top: 9px;
+    line-height: 28px;
+}
+.site__content-wrap>ul>li{
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.site__content-wrap>ul>li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 12px;
+    background: url("../img/cheack.png");
+    left: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+}
+.site__content-wrap ul ul li:before{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    left: 2px;
+    top: 12px;
+    background-color: #2fa536;
+    border-radius: 11px;
+}
+.site__content-wrap>ul>li li{
+    position: relative;
+    padding-left: 16px;
+}
+.site__content-wrap ol{
+    position: relative;
+    counter-reset: li;
+    list-style: none;
+    margin-bottom: 25px;
+    font-size: 14px;
+    margin-top: -4px;
+}
+.site__content-wrap ol>li{
+    position: relative;
+    padding-left: 14px;
+    line-height: 25px;
+    margin-top: 2px;
+}
+.site__content-wrap  .list-strong li .callback{
+    margin-left: -13px;
+}
+.site__content-wrap ol>li li{
+    line-height: 17px;
+    padding-left: 39px;
+    margin-bottom: 12px;
+}
+.site__content-wrap ol>li ol{
+    margin-top: 8px;
+    margin-bottom: 13px;
+
+}
+.site__content-wrap ol li:before{
+    counter-increment: li;
+    content: counters(li,".") ")";
+    position: absolute;
+    left: -5px;
+    top: 2px;
+    padding: 0 6px;
+    color: #2fa536;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.site__content-wrap ol li li:before{
+    margin-right: 7px;
+    top: -2px;
+    left: 2px;
+}
+.site__content ol>li {
+    position: relative;
+    padding-left: 27px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
 /* --------------- /site --------------- */
+/* ------------- breadcrumps ------------- */
+.breadcrumps {
+    padding: 27px 2px 22px;
+    font-size: 14px;
+    color: #385194;
+    width: 640px;
+}
+.breadcrumps a{
+    position: relative;
+    margin-right: 17px;
+    color: #333;
+    text-decoration: underline;
+}
+.breadcrumps a:hover{
+    text-decoration: none;
+}
+.breadcrumps a:after{
+    content: '>';
+    position: absolute;
+    left: 100%;
+    top: 2px;
+    margin-left: 4px;
+}
+.breadcrumps span{
+    color: #000;
+}
+/* ------------- /breadcrumps ------------- */
 
 /* --------------- header__menu--------------- */
 .header__menu{
@@ -810,5 +937,6 @@ a.information-implementation:after{
     height: 234px;
     background: #000;
     margin-bottom: 23px;
+
 }
 /* --------------- /gallery--------------- */
