@@ -410,7 +410,6 @@ a{
 .site__content-wrap ol>li ol{
     margin-top: 8px;
     margin-bottom: 13px;
-
 }
 .site__content-wrap ol li:before{
     counter-increment: li;
@@ -437,6 +436,7 @@ a{
     margin-bottom: 5px;
 }
 /* --------------- /site --------------- */
+
 /* ------------- breadcrumps ------------- */
 .breadcrumps {
     padding: 27px 2px 22px;
@@ -937,6 +937,44 @@ a.information-implementation:after{
     height: 234px;
     background: #000;
     margin-bottom: 23px;
-
 }
 /* --------------- /gallery--------------- */
+
+/* --------------- form-frame --------------- */
+.form-frame dd,
+.form-frame dt{
+    height: 28px;
+    margin-bottom: 11px;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.form-frame dt{
+    width: 283px;
+    padding-right: 11px;
+    font-size: 14px;
+    text-align: right;
+}
+.form-frame input{
+    width: 300px;
+    height: 28px;
+    border: 1px solid #d8d8d8;
+}
+.form-frame__zip input{
+    width: 120px;
+}
+.form-frame__place input{
+    width: 73px;
+}
+.form-frame input[type=file]{
+    border: none;
+}
+.form-frame__required{
+    color: #e30337;
+}
+.form-frame__note{
+    display: block;
+    font-size: 12px;
+    color: #8f8f8f;
+}
+/* --------------- form-frame --------------- */
