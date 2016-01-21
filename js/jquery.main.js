@@ -4,14 +4,11 @@ $(function(){
         Slider($(this));
     });
 
+    $('input[type=tel]').each(function () {
+        $(this).inputmask("+7 ( 999 ) 999 - 99 - 99", ({promptChar: "."}));
+    });
 
 } );
-
-$(window).on({
-    load: function () {
-        
-    }
-});
 
 var Slider = function (obj) {
 
