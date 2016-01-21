@@ -48,6 +48,28 @@ var Slider = function (obj) {
         });
 
     }
+    if (_obj.hasClass('gallery__slider-wrap')) {
+        var _slider2 = new Swiper(_obj, {
+            nextButton: '.gallery__next',
+            prevButton: '.gallery__prev',
+            slidesPerView: 1,
+            loop: true,
+            paginationClickable: true
+
+        });
+
+    }
+    if (_obj.hasClass('gallery-lens-wrap')) {
+        var _slider3 = new Swiper(_obj, {
+            nextButton: '.gallery-lens__next',
+            prevButton: '.gallery-lens__prev',
+            slidesPerView: 4,
+            loop: true,
+            paginationClickable: true
+
+        });
+
+    }
 
     //public properties
 
