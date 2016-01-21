@@ -48,7 +48,20 @@ var Slider = function (obj) {
         });
 
     }
-
+    $('.address-map').each(function () {
+        var myMap;
+        function init () {
+            myMap = new ymaps.Map('map', {
+                center: $('.address-map').attr('data-coord').split(', '),
+                zoom: 16
+            });
+            myMap.controls
+                .add('zoomControl', { left: 5, top: 5 })
+                .add('typeSelector')
+                .add('mapTools', { left: 35, top: 5 });
+        }
+        ymaps.ready(init);
+    });
     //public properties
 
     //public methods
