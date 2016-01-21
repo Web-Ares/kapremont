@@ -336,6 +336,12 @@ a{
 .site__content-wrap .site__content-wrap-span2{
     color: #2fa536;
 }
+.site__aside-hidden {
+    overflow: hidden;
+}
+.site__aside-hidden .swiper-container {
+    overflow: visible;
+}
 /* --------------- /site --------------- */
 
 /* --------------- header__menu--------------- */
@@ -399,7 +405,7 @@ a{
 .header__menu>ul li ul{
     position: absolute;
     background: #33ca53 url("../img/menu-top.png")no-repeat;
-    background-size: 167px 8px;
+    background-size: 247px 8px;
     background-position: -1px 0;
     top: 51px;
     padding-top: 11px;
@@ -425,16 +431,17 @@ a{
 .header__menu > ul > li:hover ul{
     opacity: 1;
     visibility: visible;
-    width: 163px;
+    width: 242px;
     border-radius: 4px;
 }
 .header__menu>ul li ul li a{
     text-align: left;
     height: 30px;
     padding: 6px 6px;
+    transition: color .3s ease;
 }
 .header__menu>ul li ul li a:hover{
-    text-decoration: underline;
+    color:#a9ffbb;
 }
 /* --------------- /header__menu --------------- */
 
@@ -648,6 +655,7 @@ a.news-list__name{
     left: 16px;
     margin-top: 8px;
     background: url("../img/slider-prev.png") no-repeat center;
+    cursor: pointer;
 }
 .useful-links__next{
     background: url("../img/slider-next.png") no-repeat center;
@@ -710,6 +718,7 @@ a.information-home{
 a.information-implementation{
     background: #22b14c;
 }
+.gallery-lens-address div:after,
 a.information-address:after,
 a.information-home:after,
 a.information-implementation:after{
@@ -806,9 +815,178 @@ a.information-implementation:after{
 
 /* --------------- gallery --------------- */
 .gallery{
+    position: relative;
+}
+.gallery__item {
+    display: inline-block;
+    vertical-align: top;
+    transition: opacity .3s ease;
+}
+.gallery__item div {
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
-    height: 234px;
-    background: #000;
-    margin-bottom: 23px;
+    height: 144px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gallery__title{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+.gallery__next,
+.gallery__prev{
+    position: absolute;
+    z-index: 2;
+    width: 38px;
+    height:38px;
+    top: 50%;
+    left: 0;
+    background: rgba(57, 64, 66, 0.45);
+    margin-top: -19px;
+    cursor: pointer;
+}
+.gallery__next{
+    left: auto;
+    right: 0;
+}
+.gallery__next:before,
+.gallery__prev:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 11px;
+    left: 13px;
+    width: 10px;
+    height: 16px;
+    background: url("../img/slider-sprite.png") no-repeat;
+    background-position: 0 -18px;
+    transition: background .3s ease;
+}
+.gallery__next:before{
+    background-position: -15px -18px;
+}
+.gallery__next:hover:before{
+    background-position: -15px 0;
+}
+.gallery__prev:hover:before{
+    background-position: 0 0;
 }
 /* --------------- /gallery--------------- */
+
+/* --------------- gallery-lens --------------- */
+.gallery-lens{
+    position: relative;
+    background: #444444;
+    padding: 7px 42px 7px 45px;
+    text-align: center;
+}
+.gallery-lens__item {
+    display: inline-block;
+    vertical-align: top;
+    transition: opacity .3s ease;
+}
+.gallery-lens__item>div:hover{
+    opacity: 1;
+    border: 1px solid #22b14c;
+}
+.gallery-lens__item>div {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 0.7;
+    width: 55px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .3s ease, border .3s ease;
+}
+.gallery-lens__next,
+.gallery-lens__prev{
+    position: absolute;
+    z-index: 2;
+    width: 42px;
+    height:42px;
+    top: 50%;
+    left: 0;
+    background: #444444;
+    margin-top: -21px;
+    cursor: pointer;
+}
+.gallery-lens__next{
+    left: auto;
+    right: 0;
+}
+.gallery-lens__next:before,
+.gallery-lens__prev:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 11px;
+    left: 16px;
+    width: 10px;
+    height: 16px;
+    background: url("../img/slider-sprite.png") no-repeat;
+    background-position: 0 -18px;
+    transition: background .3s ease;
+}
+.gallery-lens__next:before{
+    background-position: -15px -18px;
+}
+.gallery-lens__next:hover:before{
+    background-position: -15px 0;
+}
+.gallery-lens__prev:hover:before{
+    background-position: 0 0;
+}
+.gallery-overhaul{
+    font-size: 18px;
+    color:#fff;
+    border-radius: 0 0 3px 3px;
+    padding: 7px 10px 10px;
+    background: #0a5886;
+    margin-bottom: 25px;
+}
+.gallery-lens-address{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.gallery-lens-address:hover div.gallery-lens__content{
+    display: block;
+}
+.gallery-lens-address div{
+    position: absolute;
+    margin: -81px 0 0 -48px;
+    z-index: 10;
+    display: none;
+    padding: 10px 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    background-color: #22b14c;
+    width: 150px;
+    height: 68px;
+}
+.gallery-lens-address div:after{
+    border-top-color: #22b14c;
+    border-width: 10px 10px 0 10px;
+    left: 70px;
+    right: auto;
+}
+.gallery-lens-address div a{
+    display: block;
+    width: 100%;
+    height: 72px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    text-align: left;
+    text-decoration: underline;
+}
+.gallery-lens-address div a:hover{
+    text-decoration: none;
+}
+/* --------------- /gallery-lens--------------- */
