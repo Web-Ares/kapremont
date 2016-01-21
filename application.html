@@ -23,8 +23,9 @@
 
         <div class="site__header-top">
 
-            <h1 class="logo">
-                <img src="img/logo.png"></h1><!-- /logo -->
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Капремонт">
+            </a><!-- /logo -->
 
             <div class="site__header-title">
                 Некоммерческая организация фонд
@@ -92,8 +93,9 @@
 
         <!-- site__content-wrap -->
         <div class="site__content-wrap">
-            <h1 class="">Написать обращение</h1>
-            К рассмотрению принимаются обращения с правильно заполненными обязательными полями, отмеченные символом *
+            <h1 class="site__title">Написать обращение</h1>
+
+            <span class="attention">К рассмотрению принимаются обращения с правильно заполненными обязательными полями, отмеченные символом *</span>
 
             <p>Срок рассмотрения обращения - 30 дней.</p>
 
@@ -103,7 +105,7 @@
                 <form method="get" action="#">
                     <dl>
                         <dt>
-                            <label form="form-frame__surname">Ваша Фамилия<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__surname">Ваша Фамилия<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__surname" id="form-frame__surname" required/>
@@ -111,7 +113,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__name">Ваше Имя<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__name">Ваше Имя<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__name" id="form-frame__name" required/>
@@ -119,7 +121,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__patronymic">Ваше Отчество<span class="form-frame__patronymic">*</span></label>
+                            <label for="form-frame__patronymic">Ваше Отчество<span class="form-frame__patronymic">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__surname" id="form-frame__patronymic" required/>
@@ -127,7 +129,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__oganization">Наименование организации</label>
+                            <label for="form-frame__oganization">Наименование организации</label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__oganization" id="form-frame__oganization" required/>
@@ -135,7 +137,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__email">Адрес электронной почты<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__email">Адрес электронной почты<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__email" id="form-frame__email" required/>
@@ -143,7 +145,7 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__country">Городской округ / Муниципальный район<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__country">Городской округ / Муниципальный район<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__country" id="form-frame__country" required/>
@@ -151,63 +153,79 @@
                     </dl>
                     <dl>
                         <dt>
-                            <label form="form-frame__city">Город / Населенный пункт<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__city">Город / Населенный пункт<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__city" id="form-frame__city" required/>
                         </dd>
                     </dl>
+
+                    <!-- form-frame__zip -->
                     <dl class="form-frame__zip">
                         <dt>
-                            <label form="form-frame__zip">Индекс</label>
+                            <label for="form-frame__zip">Индекс</label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__zip" id="form-frame__zip" required/>
                         </dd>
                     </dl>
+                    <!-- /form-frame__zip -->
+
                     <dl>
                         <dt>
-                            <label form="form-frame__street">Улица<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__street">Улица<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__street" id="form-frame__street" required/>
                         </dd>
                     </dl>
+
+                    <!-- form-frame__place -->
                     <dl class="form-frame__place">
                         <dt>
-                            <label form="form-frame__home">Дом<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__home">Дом<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__home" id="form-frame__home" required/>
                         </dd>
                     </dl>
+                    <!-- /form-frame__place -->
+
+                    <!-- form-frame__place -->
                     <dl class="form-frame__place">
                         <dt>
-                            <label form="form-frame__housing">Корпус<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__housing">Корпус<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__housing" id="form-frame__housing" required/>
                         </dd>
                     </dl>
+                    <!-- /form-frame__place -->
+
+                    <!-- form-frame__place -->
                     <dl class="form-frame__place">
                         <dt>
-                            <label form="form-frame__flat">Квартира<span class="form-frame__required">*</span></label>
+                            <label for="form-frame__flat">Квартира<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__flat" id="form-frame__flat" required/>
                         </dd>
                     </dl>
+                    <!-- /form-frame__place -->
+
                     <dl>
                         <dt>
-                            <label form="form-frame__phone">Ваш контактный телефон</label>
+                            <label for="form-frame__phone">Ваш контактный телефон</label>
                         </dt>
                         <dd>
-                            <input type="text" name="form-frame__phone" id="form-frame__phone" required/>
+                            <input type="text" name="form-frame__phone" id="form-frame__phone" required placeholder="+7"/>
                         </dd>
                     </dl>
-                    <dl>
+
+                    <!-- form-frame__file -->
+                    <dl class="form-frame__file">
                         <dt>
-                            <label form="form-frame__file">Прикрепить файл
+                            <label for="form-frame__file">Прикрепить файл
                                 <span class="form-frame__note">Общим объемом не более 16 Mb <br/>
                                 Тип файлов: jpg, gif, png, jpeg, pdf</span>
                             </label>
@@ -216,34 +234,90 @@
                             <input type="file" name="form-frame__file" id="form-frame__file" required/>
                         </dd>
                     </dl>
-                    <dl>
+                    <!-- /form-frame__file -->
+
+                    <!-- form-frame__textarea -->
+                    <dl class="form-frame__textarea">
                         <dt>
-                            <label form="form-frame__message">Текст сообщения или вопроса<span class="form-frame__required">*</span>
+                            <label for="form-frame__message">Текст сообщения или вопроса<span class="form-frame__required">*</span>
                                 <span class="form-frame__note">Не более 5000 символов</span>
                             </label>
                         </dt>
                         <dd>
-                            <input type="text" name="form-frame__message" id="form-frame__message" required/>
+                            <textarea name="form-frame__message" id="form-frame__message" required></textarea>
                         </dd>
                     </dl>
-                    <dl>
+                    <!-- /form-frame__textarea -->
+
+                    <!-- form-frame__choiser -->
+                    <dl class="form-frame__choiser">
                         <dt>
-                            <label form="form-frame__uswer">Форма получения ответа<span class="form-frame__required">*</span>
-                            </label>
+                            <label>Форма получения ответа<span class="form-frame__required">*</span></label>
                         </dt>
                         <dd>
-                            <input type="text" name="form-frame__uswer" id="form-frame__uswer" required/>
+                            <fieldset>
+                                <input type="radio" name="form-frame__answer" id="form-frame__answer-001" checked/>
+                                <label for="form-frame__answer-001">Ответ не требуется</label>
+                            </fieldset>
+                            <fieldset><input type="radio" name="form-frame__answer" id="form-frame__answer-002"/>
+                                <label for="form-frame__answer-002">Прошу отправить ответ на мой адрес эл.почты (рекомендуется)</label>
+                            </fieldset>
+                            <fieldset><input type="radio" name="form-frame__answer" id="form-frame__answer-003"/>
+                                <label for="form-frame__answer-003">Прошу отправить ответ на мой почтовый адрес</label>
+                            </fieldset>
                         </dd>
                     </dl>
-                    <dl>
+                    <!-- /form-frame__choiser -->
+
+                    <!-- form-frame__captcha -->
+                    <dl class="form-frame__captcha">
                         <dt>
-                            <label form="form-frame__captcha">Введите символы с картинки<span class="form-frame__required">*</span>
+                            <label for="form-frame__captcha">Введите символы с картинки<span class="form-frame__required">*</span>
                             </label>
                         </dt>
                         <dd>
                             <input type="text" name="form-frame__captcha" id="form-frame__captcha" required/>
+
+                            <div class="capcha">
+                                <img src="pic/captcha.jpg" alt="img"/>
+                            </div>
                         </dd>
                     </dl>
+                    <!-- /form-frame__captcha -->
+
+                    <!-- form-frame__choiser -->
+                    <dl class="form-frame__choiser">
+                        <dt></dt>
+                        <dd>
+                            <fieldset><input type="checkbox" name="form-frame__agreement" id="form-frame__agreement"/>
+                                <label for="form-frame__agreement">Вы даете согласие на обработку персональных данных, указанных в обращении</label>
+                            </fieldset>
+                        </dd>
+                    </dl>
+                    <!-- /form-frame__choiser -->
+
+                    <!-- form-frame__btn -->
+                    <dl class="form-frame__btn">
+                        <dt></dt>
+                        <dd>
+
+                            <!-- btn -->
+                            <button class="btn">Отправить</button>
+                            <!-- /btn -->
+
+                        </dd>
+                    </dl>
+                    <!-- /form-frame__btn -->
+
+                    <!-- form-frame__note -->
+                    <dl class="form-frame__note">
+                        <dt></dt>
+                        <dd>
+                            <p><span class="form-frame__required">*</span> - обязательные поля</p>
+                        </dd>
+                    </dl>
+                    <!-- /form-frame__note -->
+
                 </form>
 
             </div>
@@ -261,7 +335,7 @@
             <div class="site__header-search">
                 <form>
                     <input type="search" class="search-field" name="search" placeholder="Поиск на сайте">
-                    <input type="button" class="search-btn" name="find">
+                    <input type="button" class="search-btn" name="find"/>
                 </form>
             </div>
 
@@ -466,7 +540,7 @@
                 <a class="information-home" href="#">Найти свой дом</a>
                 <a class="information-implementation" href="#">
                     <span class="information-title">Ход реализации</span>
-                    <span>Республиканской программы капитального ремонта</span>
+                    <span>Республиканской программы капитального ремонта</span>
                 </a>
 
             </div>
@@ -555,8 +629,8 @@
 
                 <!-- site__footer-copyright -->
                 <div class="site__footer-copyright">
-                    <span>© Некоммерческая организация фонд</span>
-                    <span>«Региональный оператор Республики Башкортостан», 2015.</span>
+                    <span>© Некоммерческая  организация фонд</span>
+                    <span>«Региональный оператор Республики Башкортостан», 2015.</span>
                 </div>
                 <!-- /site__footer-copyright -->
 
@@ -592,7 +666,8 @@
 
         </div><!-- /site__footer-layout -->
 
-    </footer><!-- /site__footer -->
+    </footer>
+    <!-- /site__footer -->
 
 </div><!-- /site -->
 
