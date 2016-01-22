@@ -99,7 +99,7 @@ a{
     width: 100%;
     height: 174px;
     z-index: 3;
-    /*margin-bottom: 23px;*/
+    margin-bottom: 23px;
 }
 .site__header-top{
     background: #0a5886 url("../img/header-bg.png") no-repeat;
@@ -286,7 +286,7 @@ a{
     width: 640px;
     text-align: left;
     background: #f5f4ec;
-    padding: 19px 14px 10px 24px;
+    padding: 19px 14px 10px 20px;
     margin-bottom: 60px;
 }
 .site__aside{
@@ -466,19 +466,22 @@ a{
 }
 .site__content-wrap .site_sub-title{
     position: relative;
+    display: inline-block;
     background: url("../img/icon-search.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 36px;
     margin-left: -2px;
     line-height: 29px;
+    margin-right: 13px;
+    width: 215px;
 
 }
 .site__content-wrap .site_sub-title:after{
     content: '';
     position: absolute;
     height: 1px;
-    width: 100%;
+    width: 608px;
     background-color: #bdbdbd;
     bottom: -11px;
     left: 0;
@@ -486,6 +489,7 @@ a{
 .site__content-wrap dl{
     font-size: 14px;
     padding-top: 36px;
+    margin-bottom: 16px;
  }
 .site__content-wrap dl dt{
     display: inline-block;
@@ -509,8 +513,39 @@ a{
     width: 604px;
     position: relative;
     margin-top: 29px;
-    margin-bottom: 37px;
+    margin-bottom: 18px;
     height: 349px;
+}
+.site_feedback-info{
+    display: inline-block;
+    width: 300px;
+}
+.site__content-wrap .site_sub-title-feedback-email, .site__content-wrap .site_sub-title-feedback-schedule{
+    margin-bottom: 39px;
+}
+.site__content-wrap .site_sub-title-feedback-schedule{
+    background: url("../img/icon-time.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 9px;
+}
+.site__content-wrap .site_sub-title-feedback-email{
+    background: url("../img/icon-message.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.site__content-wrap .site_sub-title-feedback-email:after, .site__content-wrap .site_sub-title-feedback-schedule:after{
+     bottom: -20px;
+}
+.site__content-wrap .site_sub-title-feedback-email:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 608px;
+    background-color: #bdbdbd;
+    left: 0;
+    top: -20px;
 }
 /* --------------- /site --------------- */
 
@@ -548,7 +583,7 @@ a{
 
 /* ------------- breadcrumps ------------- */
 .breadcrumps {
-    padding: 22px 2px 22px;
+    padding: 0 2px 22px;
     font-size: 14px;
     color: #385194;
     width: 640px;
@@ -1339,7 +1374,23 @@ a.information-implementation:after{
     color: #000;
 }
 /* --------------- form-frame --------------- */
+/* --------------- address --------------- */
+.address h2 {
+    margin: 0 auto;
+    max-width: 940px;
+    margin-bottom: 53px;
+}
+.map__wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+.map__item{
+    display: none;
+}
 
+/* --------------- /address --------------- */
 /* --------------- capcha --------------- */
 .capcha{
     width: 180px;
