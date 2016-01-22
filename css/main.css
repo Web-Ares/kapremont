@@ -1302,6 +1302,7 @@ a.information-implementation:after{
     padding: 0 5px;
     border: 1px solid #d8d8d8;
     font: 17px 'Ubuntu', sans-serif;
+    box-shadow: none;
 }
 .site__content-wrap .form-frame textarea{
     height: 124px;
