@@ -110,9 +110,12 @@ a{
     margin: 0 auto;
 }
 .site__header-bottom{
+    background: #1b8f36;
     background: -webkit-linear-gradient(top, #22b14c 0%,#1b8f36 50%);
     background: -o-linear-gradient(top, #22b14c 0%,#1b8f36 50%);
     background: linear-gradient(top, #22b14c 0%,#1b8f36 50%);
+    background: -moz-linear-gradient(top, #22b14c 0%,#1b8f36 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22b14c', endColorstr='#1b8f36',GradientType=0 );
     width:100%;
     height: 51px;
 }
@@ -635,7 +638,7 @@ a{
     background-size: contain;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -1px;
     width: 1px;
     height: 41px;
 }
@@ -662,9 +665,12 @@ a{
 }
 .header__menu > ul > li:hover > a.active,
 .header__menu > ul > li:hover > a {
+    background: #2eb84c;
     background: -webkit-linear-gradient(top, #2eb84c 0%,#32c852 50%);
     background: -o-linear-gradient(top, #2eb84c 0%,#32c852 50%);
     background: linear-gradient(top, #2eb84c 0%,#32c852 50%);
+    background: -moz-linear-gradient(top, #2eb84c 0%,#32c852 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2eb84c', endColorstr='#32c852',GradientType=0 );
 }
 .header__menu > ul > li > a.active{
     background: #33ca53;
@@ -672,8 +678,8 @@ a{
 .header__menu>ul li ul{
     position: absolute;
     background: #33ca53 url("../img/menu-top.png")no-repeat;
-    background-size: 273px 8px;
-    background-position: -1px 0;
+    background-size: 277px 8px;
+    background-position: -3px 0;
     top: 51px;
     padding-top: 11px;
     padding-bottom: 3px;
@@ -699,7 +705,17 @@ a{
     opacity: 1;
     visibility: visible;
     width: 268px;
-    border-radius: 4px;
+    border-radius: 0 0 3px 3px;
+}
+.header__menu > ul > li:hover:before{
+    content: "";
+    background: url("../img/menu-line.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 1px;
+    height: 41px;
 }
 .header__menu>ul li ul li a{
     text-align: left;
