@@ -489,6 +489,10 @@ a{
     padding-top: 36px;
     margin-bottom: 16px;
  }
+.site__content-wrap .form-frame dl{
+    padding-top: 0;
+    margin-bottom:0;
+}
 .site__content-wrap dl dt{
     display: inline-block;
     margin-right: -9px;
@@ -1272,76 +1276,76 @@ a.information-implementation:after{
 /* --------------- /gallery-lens--------------- */
 
 /* --------------- form-frame --------------- */
-.form-frame dd,
-.form-frame dt{
+.site__content-wrap .form-frame dd,
+.site__content-wrap .form-frame dt{
     height: 28px;
     margin-bottom: 11px;
     display: inline-block;
     vertical-align: top;
 }
-.form-frame dt{
+.site__content-wrap .form-frame dl dt{
     width: 283px;
     padding-top: 5px;
     padding-right: 11px;
     font-size: 14px;
     text-align: right;
 }
-.form-frame dd{
+.site__content-wrap .form-frame dd{
     width: 300px;
 }
-.form-frame input[type=text],
-.form-frame input[type=tel],
-.form-frame input[type=email],
-.form-frame textarea{
+.site__content-wrap .form-frame input[type=text],
+.site__content-wrap .form-frame input[type=tel],
+.site__content-wrap .form-frame input[type=email],
+.site__content-wrap .form-frame textarea{
     width: 100%;
     height: 28px;
     padding: 0 5px;
     border: 1px solid #d8d8d8;
     font: 17px 'Ubuntu', sans-serif;
 }
-.form-frame textarea{
+.site__content-wrap .form-frame textarea{
     height: 124px;
 }
-.form-frame__zip dd{
+.site__content-wrap .form-frame__zip dd{
     width: 120px;
 }
-.form-frame__place dd{
+.site__content-wrap .form-frame__place dd{
     width: 73px;
 }
-.form-frame__required{
+.site__content-wrap .form-frame__required{
     color: #e30337;
 }
-.form-frame__note{
+.site__content-wrap .form-frame__note{
     display: block;
     padding-top: 6px;
     font-size: 12px;
     color: #8f8f8f;
 }
-.form-frame__file{
-    margin-bottom: 35px;
+.site__content-wrap .form-frame__file{
+    margin-bottom: 35px !important;
 }
-.form-frame__file dd{
+.site__content-wrap .form-frame__file dd{
     padding-top: 9px;
 }
-.form-frame__textarea dd,
-.form-frame__textarea dt {
+.site__content-wrap .form-frame__textarea dd,
+.site__content-wrap .form-frame__textarea dt {
     height: auto;
 }
-.form-frame__textarea dt{
+.site__content-wrap .form-frame__textarea dt{
     padding-top: 0;
 }
-.form-frame__choiser dd,
-.form-frame__choiser dt{
+.site__content-wrap .form-frame__choiser dd,
+.site__content-wrap .form-frame__choiser dt{
     height: auto;
 }
-.form-frame__choiser fieldset{
+.site__content-wrap .form-frame__choiser fieldset{
     display: block;
     margin-bottom: 9px;
 }
-.form-frame__choiser dt{
-    padding-top: 0;
+.site__content-wrap .form-frame__choiser dt{
+    padding-top: 0 !important;
 }
-.form-frame__choiser dd label{
+.site__content-wrap .form-frame__choiser dd label{
     display: inline-block;
     vertical-align: top;
     width: 92%;
@@ -1349,24 +1353,24 @@ a.information-implementation:after{
     font-size: 12px;
     line-height: 17px;
 }
-.form-frame__choiser dd input{
+.site__content-wrap .form-frame__choiser dd input{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
-.form-frame__captcha dd,
-.form-frame__captcha dt{
+.site__content-wrap .form-frame__captcha dd,
+.site__content-wrap .form-frame__captcha dt{
     height: auto;
 }
-.form-frame__captcha input{
+.site__content-wrap .form-frame__captcha input{
     margin-bottom: 8px;
 }
-.form-frame__btn dt,
-.form-frame__btn dd{
+.site__content-wrap .form-frame__btn dt,
+.site__content-wrap .form-frame__btn dd{
     height: auto;
 }
-.form-frame__note p,
-.form-frame__note dd,
-.form-frame__note dt{
+.site__content-wrap .form-frame__note p,
+.site__content-wrap .form-frame__note dd,
+.site__content-wrap .form-frame__note dt{
     margin-bottom: 5px;
     height: auto;
     color: #000;
