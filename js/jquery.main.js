@@ -1,8 +1,21 @@
 $(function(){
 
+    $('.gallery__item').each(function () {
+        $(".group").fancybox({
+            padding : 0,
+            cyclic: false,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+    });
+
     $('.swiper-container').each(function () {
         Slider($(this));
     });
+
 
     $('input[type=tel]').each(function () {
         $(this).inputmask("+7 ( 999 ) 999 - 99 - 99", ({promptChar: "."}));
@@ -92,12 +105,38 @@ var Slider = function (obj) {
         });
 
     }
-    if (_obj.hasClass('gallery__slider-wrap')) {
+    if (_obj.hasClass( 'gallery__slider-wrap' )) {
+
+        $( '.gallery-lens__item' ).click( function (){
+
+        var curElem = $(this),
+            curAttr = curElem.data( 'gallery' );
+
+        $( '.gallery-lens__item' ).removeClass( 'active' );
+            curElem.addClass( 'active' );
+
+        $( '.gallery__next' ).show();
+        $( '.gallery__prev' ).show();
+
+        $( '.gallery__item' ).hide();
+
+        $( '.gallery__item' ).each( function () {
+
+            var curElemShow = $( this ),
+                curAttrShow = curElemShow.data( 'gallery' );
+
+            if( curAttr == curAttrShow ){
+                curElemShow.show();
+            }
+        });
+
+        _slider2.updateSlidesSize();
+        _slider2.slideTo(0, 1);
+    });
         var _slider2 = new Swiper(_obj, {
             nextButton: '.gallery__next',
             prevButton: '.gallery__prev',
             slidesPerView: 1,
-            loop: true,
             paginationClickable: true
 
         });
@@ -108,7 +147,6 @@ var Slider = function (obj) {
             nextButton: '.gallery-lens__next',
             prevButton: '.gallery-lens__prev',
             slidesPerView: 4,
-            loop: true,
             paginationClickable: true
 
         });
